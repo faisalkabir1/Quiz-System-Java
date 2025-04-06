@@ -6,7 +6,7 @@ This Java-based software system allows an admin to manage a quiz bank by adding 
 
 - **Admin Role**: Add SQA-related MCQs to `quiz.json` until 'q' is pressed. The initial quiz bank contains 30 questions.
 - **Student Role**: Take a 10-question quiz with random selection from the quiz bank, scoring 1 mark per correct answer (no negative marking).
-- **Authentication**: Login via `users.json` with predefined credentials for admin (`admin/1234`) and student (`salman/1234`).
+- **Authentication**: Login via `users.json` with predefined credentials for admin (`Username: admin, Password: 1234`) and student (`username: faisal, Password: 1234`).
 
 ## How to Run
 
@@ -21,17 +21,16 @@ This Java-based software system allows an admin to manage a quiz bank by adding 
 
 ## Project Structure
 
-- **`src/QuizSystem.java`**: Main Java file containing the quiz system logic.
-- **`users.json`**: Stores user credentials (auto-generated on first run).
-- **`quiz.json`**: Stores the quiz bank with 30 initial SQA questions (auto-generated on first run).
+- **`src/main/java/JavaQuizExam.java`**: Main Java file containing the quiz system logic.
+- **`src/main/resources/users.json`**: Stores user credentials.
+- **`src/main/resources/quiz.json`**: Stores the quiz bank with 30 initial SQA questions.
 - **`.gitignore`**: Excludes `.idea`, `.gradle`, `gradle`, and `build` files/folders.
 
 ## Demo Video
 
-Watch the execution of the project for both admin and student roles:
+Watch the execution of the project for both admin and student roles: [Video Link](https://drive.google.com/file/d/11VHtHszJdre_wPOkpU6B3YpXx5vjMIIo/view?usp=drive_link)
 
 ## Notes
 
 - The quiz bank starts with 30 SQA-related questions. Admins can add more.
-- Student quizzes may include duplicate questions; this probability decreases as the quiz bank grows.
 - Scoring: Correct answers = 1 mark, wrong/invalid answers = 0 marks.
